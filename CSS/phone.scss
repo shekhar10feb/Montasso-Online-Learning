@@ -1,0 +1,68 @@
+// Navigation
+#navbar {
+    flex-direction: column;
+    padding-bottom: .2rem;
+}
+
+#navbar ul li a {
+    font-size: 1rem;
+    padding: 0 12px;
+}
+
+// Navigation Bar: Logo and Image 
+#logo {
+    margin: 3px auto;
+
+    img {
+        height: 3rem;
+        margin: .5rem auto;
+    }
+}
+
+// Home Section 
+#home {
+    height: 38rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column-reverse;
+    padding: 3px 50px;
+
+    &::before {
+        height: 50rem;
+    }
+
+    .content {
+        height: 40%;
+
+        &-main {
+
+            .phrase, p {
+                font-size: 1.2rem;
+                margin: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+                margin: 1rem;
+            }
+        }
+
+        &-sub {
+
+            button {
+                font-size: .9rem;
+                padding: .6rem .8rem;
+                margin: 1rem;
+            }
+        }
+    }
+
+    .learningPhoto {
+
+        img {
+            height: 16rem;
+        }
+    }
+}
+
