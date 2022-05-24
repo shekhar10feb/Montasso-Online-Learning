@@ -97,9 +97,10 @@ html {
         align-items: flex-start;
         flex-direction: column;
         font-family: 'Roboto', sans-serif;
+        // outline: 1px solid red;
 
         p, h1, button {
-            margin: 1.5rem 0;
+            margin: 1.5rem;
         }
 
         .phrase {
@@ -138,11 +139,11 @@ html {
     }
 
     .learningPhoto {
-        margin-bottom: 6rem;
+        margin-bottom: 1rem;
         // outline: 1px solid red;
 
         img {
-            height: 47rem;
+            height: 44rem;
         }
     }
 
