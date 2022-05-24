@@ -1,0 +1,67 @@
+#navbar {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: .2rem;
+}
+
+#navbar ul li a {
+  font-size: 1rem;
+  padding: 0 12px;
+}
+
+#logo {
+  margin: 3px auto;
+}
+
+#logo img {
+  height: 3rem;
+  margin: .5rem auto;
+}
+
+#home {
+  height: 38rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding: 3px 50px;
+}
+
+#home::before {
+  height: 50rem;
+}
+
+#home .content {
+  height: 40%;
+}
+
+#home .content-main .phrase, #home .content-main p {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+#home .content-main h1 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+#home .content-sub button {
+  font-size: .9rem;
+  padding: .6rem .8rem;
+  margin: 1rem;
+}
+
+#home .learningPhoto img {
+  height: 16rem;
+}
+/*# sourceMappingURL=phone.css.map */
