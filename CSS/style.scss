@@ -75,7 +75,7 @@ html {
     flex-direction: row;
     padding: 3px 5rem;
     height: 50rem;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     &::before {
@@ -91,7 +91,7 @@ html {
     }
 
     .quotes {
-        height: 100%;
+        height: 80%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -138,9 +138,11 @@ html {
     }
 
     .learningPhoto {
+        margin-bottom: 6rem;
+        // outline: 1px solid red;
 
         img {
-            height: 27rem;
+            height: 47rem;
         }
     }
 
