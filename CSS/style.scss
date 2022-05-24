@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+// Navigation Bar 
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+
+    &::before {
+        content: "";
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+}
+
+// Navigation Bar: Logo and Image 
+#logo {
+    margin: 5px 22px;
+
+    img {
+        height: 5.6rem;
+        margin: 1rem 1.2rem;
+        border-radius: 1rem;
+    }
+}
+
+// Navigation Bar: List Styling 
+#navbar {
+
+    ul  {
+        display: flex;
+        font-size: 1.8rem;
+
+        li {
+            list-style: none;
+            font-size: 1.8rem;
+            font-family: 'Roboto', sans-serif;
+
+            a {
+                color: rgba(41, 40, 40, 0.6);
+                display: block;
+                padding: 3px 22px;
+                border-radius: 2rem;
+                text-decoration: none;
+
+                &:hover {
+                    color: #fff;
+                    background-color: rgba(41, 40, 40, 0.6);
+                }
+            }
+        }
+    }
+}
+
+// Home Section 
+#home {
+    display: flex;
+    flex-direction: row;
+    padding: 3px 5rem;
+    height: 50rem;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+        content: "";
+        background: url('../assets/Background.png') no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 61rem;
+        width: 100%;
+        z-index: -1;
+        opacity: .89;
+    }
+
+    .quotes {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+
+        p, h1, button {
+            margin: 1.5rem 0;
+        }
+
+        .phrase {
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+        } 
+
+        button {
+            width: 20%;
+            color: #fff;
+            background-image: linear-gradient(to right, rgba(96, 214, 214, 50%), rgba(44, 167, 167, 100%));
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1.8rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            border: none;
+
+            transform: translateY(0);
+            transition: transform .2s ease-out;
+
+            &:hover {
+                color: rgba(41, 40, 40, 0.6);
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    .learningPhoto {
+
+        img {
+            height: 27rem;
+        }
+    }
+
+    p {
+        color: #000;
+    }
+}
