@@ -122,19 +122,19 @@ html {
 #home .content-main .phrase, #home .content-main p {
   font-size: 1.5rem;
   font-weight: 600;
-  margin: 1.8rem;
+  margin: 2rem;
 }
 
 #home .content-main h1 {
   font-size: 3.2rem;
   font-weight: 600;
-  margin: 1.8rem;
+  margin: 2rem;
 }
 
 #home .content-main p {
   font-size: 1.2rem;
   font-weight: 300;
-  margin: 1.8rem;
+  margin: 2rem;
 }
 
 #home .content-sub {
@@ -156,7 +156,8 @@ html {
   background-image: -webkit-gradient(linear, left top, right top, from(#60d6d6), to(#2ca7a7));
   background-image: linear-gradient(to right, #60d6d6, #2ca7a7);
   padding: 1rem 1.5rem;
-  margin: 1.8rem;
+  margin: 2.2rem;
+  margin-left: 2rem;
   border-radius: 5rem;
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;

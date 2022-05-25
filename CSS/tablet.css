@@ -1,0 +1,66 @@
+#navbar {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: .1rem;
+}
+
+#navbar ul li a {
+  font-size: 1.4rem;
+  padding: 0 16px;
+}
+
+#logo {
+  margin: 4px 1.5rem;
+}
+
+#logo img {
+  height: 5rem;
+  margin: .7rem;
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50rem;
+  padding: 3px 4rem;
+}
+
+#home::before {
+  height: 55rem;
+}
+
+#home .content {
+  height: 80%;
+}
+
+#home .content-main .phrase, #home .content-main p {
+  font-style: 1.4rem;
+  margin: 1.6rem;
+}
+
+#home .content-main h1 {
+  font-size: 2.5rem;
+  margin: 1.6rem;
+}
+
+#home .content-sub {
+  width: 100%;
+}
+
+#home .content-sub button {
+  width: 40%;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#home .learningPhoto {
+  margin-bottom: 2rem;
+}
+
+#home .learningPhoto img {
+  max-height: 26rem;
+}
+/*# sourceMappingURL=tablet.css.map */
