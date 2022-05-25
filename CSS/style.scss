@@ -10,16 +10,25 @@ html {
     font-size: 62.5%;
 }
 
+.container {
+    background: url('../assets/Background.png');
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
 // Navigation Bar 
 #navbar {
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
     top: 0;
 
     &::before {
         content: "";
-        background-color: #000;
+        background-color: rgb(218, 218, 218);
         position: absolute;
         top: 0;
         left: 0;
@@ -73,7 +82,7 @@ html {
     display: flex;
     flex-direction: row;
     padding: 3px 5rem;
-    height: 50rem;
+    height: 52rem;
     justify-content: space-around;
     align-items: center;
 
@@ -83,7 +92,7 @@ html {
         position: absolute;
         top: 0;
         left: 0;
-        height: 61rem;
+        height: 60rem;
         width: 100%;
         z-index: -1;
         opacity: .89;
@@ -162,5 +171,104 @@ html {
 
     p {
         color: #000;
+    }
+}
+
+#benefits {
+    height: 62rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .benefits-photo {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-height: 54rem;
+        }
+    }
+
+    .benefits-main {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.benefits-facts {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: column;
+
+    .heading-paragraph {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 2rem;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+        font-weight: 600;
+        margin: 2rem;
+        margin-left: 0;
+    }
+
+    .getBenefits {
+        width: 70%;
+        color: #000;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 1rem;
+        margin-left: 0;
+        padding: .5rem 1rem;
+        border: 2px solid #000;
+        border-radius: .8rem;
+    
+        &:hover {
+            color: #fff;
+            background-image: linear-gradient(to right, rgba(96, 214, 214, 50%), rgba(44, 167, 167, 100%));
+            border: 2px solid #fff;
+        }
+    
+        .content-photo {
+            color: #fff;
+            margin-right: 1rem;
+    
+            img {
+                color: #fff;
+                width: 7rem;
+                height: 7rem;
+                display: inline-block;
+                background-color: #fff;
+                border-radius: .8rem;
+            }
+        }
+    
+        .content-main {
+           
+            .heading {
+                display: block;
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+    
+            .description {
+                font-size: 1.4rem;
+                margin-top: 1.4rem;
+            }
+        }
     }
 }
