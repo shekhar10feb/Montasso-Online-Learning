@@ -51,12 +51,12 @@
 
 #home .content-main .phrase, #home .content-main p {
   font-size: 1.4rem;
-  margin: 1rem;
+  margin: 1.2rem;
 }
 
 #home .content-main h1 {
   font-size: 2rem;
-  margin: 1rem;
+  margin: 1.2rem;
 }
 
 #home .content-sub {
@@ -67,7 +67,8 @@
   width: 40%;
   font-size: 1.2rem;
   padding: .6rem;
-  margin: 1rem;
+  margin: 1.4rem;
+  margin-left: 1.2rem;
 }
 
 #home .learningPhoto img {
