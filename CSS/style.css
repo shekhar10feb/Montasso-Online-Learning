@@ -10,6 +10,15 @@ html {
   font-size: 62.5%;
 }
 
+.container {
+  background: url("../assets/Background.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
 #navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,13 +26,14 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
 }
 
 #navbar::before {
   content: "";
-  background-color: #000;
+  background-color: #dadada;
   position: absolute;
   top: 0;
   left: 0;
@@ -77,7 +87,7 @@ html {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 3px 5rem;
-  height: 50rem;
+  height: 52rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -91,7 +101,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  height: 61rem;
+  height: 60rem;
   width: 100%;
   z-index: -1;
   opacity: .89;
@@ -189,5 +199,137 @@ html {
 
 #home p {
   color: #000;
+}
+
+#benefits {
+  height: 62rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#benefits .benefits-photo {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#benefits .benefits-photo img {
+  max-height: 54rem;
+}
+
+#benefits .benefits-main {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.benefits-facts {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.benefits-facts .heading-paragraph {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2rem;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.benefits-facts h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin: 2rem;
+  margin-left: 0;
+}
+
+.benefits-facts .getBenefits {
+  width: 70%;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  margin-left: 0;
+  padding: .5rem 1rem;
+  border: 2px solid #000;
+  border-radius: .8rem;
+}
+
+.benefits-facts .getBenefits:hover {
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#60d6d6), to(#2ca7a7));
+  background-image: linear-gradient(to right, #60d6d6, #2ca7a7);
+  border: 2px solid #fff;
+}
+
+.benefits-facts .getBenefits .content-photo {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.benefits-facts .getBenefits .content-photo img {
+  color: #fff;
+  width: 7rem;
+  height: 7rem;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: .8rem;
+}
+
+.benefits-facts .getBenefits .content-main .heading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.benefits-facts .getBenefits .content-main .description {
+  font-size: 1.4rem;
+  margin-top: 1.4rem;
 }
 /*# sourceMappingURL=style.css.map */
