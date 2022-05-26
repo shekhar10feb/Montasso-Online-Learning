@@ -1,6 +1,5 @@
 #navbar {
     flex-direction: row;
-    padding-bottom: .1rem;
 
     ul {
 
@@ -8,7 +7,7 @@
 
             a {
                 font-size: 1.4rem;
-                padding: 0 16px;
+                padding: 0 1.2rem;
             }
         }
     }
@@ -19,7 +18,7 @@
     margin: 4px 1.5rem;
 
     img {
-        height: 5rem;
+        max-height: 5rem;
         margin: .7rem;
     }
 }
@@ -27,6 +26,8 @@
 // Home Section 
 #home {
     display: flex;
+    justify-content: space-around;
+    align-content: center;
     height: 50rem;
     padding: 3px 4rem;
 
@@ -35,8 +36,8 @@
     }
 
     .content {
-        height: 80%;
-
+        height: 50%;
+        
         &-main {
 
             .phrase, p {
@@ -45,18 +46,23 @@
             }
 
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 margin: 1.6rem;
             }
         }
 
         &-sub {
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
 
             button {
-                width: 40%;
-                font-size: 1rem;
-                padding: 1rem;
+                width: 60%;
+                font-size: 1.2rem;
+                margin: .6rem;
+                margin-left: 1.6rem;
+                padding: .8rem;
             }
         }
     }
@@ -65,7 +71,80 @@
         margin-bottom: 2rem;
 
         img {
-            max-height: 26rem;
+            max-height: 20rem;
         }
     }
 }
+
+#benefits {
+    height: 50rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+
+    .benefits-photo {
+        width: 47%;
+        
+        img {
+            max-height: 20rem;
+        }
+    }
+
+    .benefits-main {
+        width: 47%;
+    }
+}
+
+.benefits-facts {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .heading-paragraph {
+        font-size: 1rem;
+        margin: 1rem;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    
+    h1 {
+        font-size: 1.7rem;
+        margin: 1rem;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .getBenefits {
+        width: 90%;
+        margin: 1rem;
+        margin-left: 0;
+        padding: .5rem;
+    
+        .content-photo {
+            margin-right: .6rem;
+    
+            .fa-solid {
+                font-size: 2.4rem;
+            }
+
+            .fa-certificate {
+                font-size: 2.8rem;
+            }
+        }
+    
+        .content-main {
+    
+            .heading {
+                font-size: 1.4rem;
+            }
+    
+            .description {
+                font-size: 1rem;
+                margin-top: .7rem;
+            }
+        }
+    }
+}
+
