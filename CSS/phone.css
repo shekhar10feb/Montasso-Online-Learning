@@ -74,4 +74,81 @@
 #home .learningPhoto img {
   height: 22rem;
 }
+
+#benefits {
+  height: 60rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#benefits .benefits-photo {
+  width: 90%;
+  max-height: 40%;
+}
+
+#benefits .benefits-photo img {
+  max-height: 18rem;
+}
+
+#benefits .benefits-main {
+  width: 90%;
+  max-height: 60%;
+}
+
+.benefits-facts {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.benefits-facts .heading-paragraph {
+  font-size: 1rem;
+  margin: 1rem;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.benefits-facts h1 {
+  font-size: 1.7rem;
+  margin: 1rem;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.benefits-facts .getBenefits {
+  width: 90%;
+  margin: 1rem;
+  margin-left: 0;
+  padding: .5rem;
+}
+
+.benefits-facts .getBenefits .content-photo {
+  margin-right: .6rem;
+}
+
+.benefits-facts .getBenefits .content-photo .fa-solid {
+  font-size: 2.4rem;
+}
+
+.benefits-facts .getBenefits .content-photo .fa-certificate {
+  font-size: 2.8rem;
+}
+
+.benefits-facts .getBenefits .content-main .heading {
+  font-size: 1.4rem;
+}
+
+.benefits-facts .getBenefits .content-main .description {
+  font-size: 1rem;
+  margin-top: .7rem;
+}
 /*# sourceMappingURL=phone.css.map */
