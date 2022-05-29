@@ -276,3 +276,92 @@ html {
         }
     }
 }
+
+#courseList {
+    height: 62rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 5rem;
+    font-family: 'Roboto', sans-serif;
+
+    .courseList__div {
+
+        P {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 1.5rem;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin: 1.5rem;
+            margin-left: 0;
+        }
+
+        .courseList__Subject {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .course {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 1rem 1.5rem;
+                margin: 1rem;
+                background-color: rgb(245, 248, 242);
+                border: 2px solid #000;
+                border-radius: 1rem;
+
+                &:nth-child(1) {
+                    margin-left: 0;
+                }
+    
+                &:nth-child(6) {
+                    margin-right: 0;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    margin: 1rem;
+                    color: rgb(161, 160, 160);
+                }
+
+                button {
+                    width: 60%;
+                    color: #fff;
+                    background-image: linear-gradient(to right, rgba(96, 214, 214, 50%), rgba(44, 167, 167, 100%));
+                    padding: 1rem 1.5rem;
+                    margin: 2rem;
+                    margin-left: 2rem;
+                    border-radius: 5rem;
+                    font-size: 1.2rem;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    cursor: pointer;
+                    outline: none;
+                    border: none;
+    
+                    transform: translateY(0);
+                    transition: all .2s ease-out;
+    
+                &:hover {
+                    color: rgba(41, 40, 40, 0.6);
+                    transform: translateY(-2px);
+                    box-shadow: 0 2px 1px 1px rgb(194, 194, 194);
+                }
+                }
+            }
+        }
+    }
+}
