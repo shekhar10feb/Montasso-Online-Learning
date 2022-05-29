@@ -81,7 +81,6 @@
     display: flex;
     justify-content: space-evenly;
     align-content: center;
-    outline: 1px solid red;
 
     .benefits-photo {
         width: 47%;
@@ -154,7 +153,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: 1px solid red;
 
     .courseList__div {
 
@@ -185,7 +183,7 @@
             .course {
                 padding: .8rem 1rem;
                 margin: .8rem;
-                
+
                 h2 {
                     font-size: 1.4rem;
                 }
