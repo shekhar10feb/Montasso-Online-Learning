@@ -81,6 +81,7 @@
     display: flex;
     justify-content: space-evenly;
     align-content: center;
+    outline: 1px solid red;
 
     .benefits-photo {
         width: 47%;
@@ -143,6 +144,61 @@
             .description {
                 font-size: 1rem;
                 margin-top: .7rem;
+            }
+        }
+    }
+}
+
+#courseList {
+    height: 68rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid red;
+
+    .courseList__div {
+
+        .courseList__heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            p {
+                font-size: 1rem;
+                margin: 1rem;
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+    
+            h1 {
+                font-size: 1.7rem;
+                font-weight: 600;
+                margin: 1rem;
+                margin-left: 0;
+            }
+        }
+
+        .courseList__Subject {
+            flex-wrap: wrap;
+
+            .course {
+                padding: .8rem 1rem;
+                margin: .8rem;
+                
+                h2 {
+                    font-size: 1.4rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                button {
+                    width: 60%;
+                    margin: 1.5rem;
+                    font-size: 1rem;  
+                }
             }
         }
     }

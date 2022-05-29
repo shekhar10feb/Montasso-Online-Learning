@@ -66,7 +66,7 @@
 #home .content-sub button {
   width: 40%;
   font-size: 1.2rem;
-  padding: .6rem;
+  padding: .4rem .6rem;
   margin: 1.4rem;
   margin-left: 1.2rem;
   margin-bottom: .4rem;
@@ -156,5 +156,90 @@
 .benefits-facts .getBenefits .content-main .description {
   font-size: 1rem;
   margin-top: .7rem;
+}
+
+#courseList {
+  height: 130rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#courseList .courseList__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#courseList .courseList__div .courseList__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#courseList .courseList__div .courseList__heading p {
+  font-size: 1rem;
+  margin: .8rem;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+#courseList .courseList__div .courseList__heading h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: .8rem;
+  margin-left: 0;
+}
+
+#courseList .courseList__div .courseList__Subject {
+  width: 90%;
+  text-align: center;
+}
+
+#courseList .courseList__div .courseList__Subject .course {
+  width: 85%;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+#courseList .courseList__div .courseList__Subject .course h2 {
+  font-size: 1.2rem;
+}
+
+#courseList .courseList__div .courseList__Subject .course p {
+  font-size: .8rem;
+}
+
+#courseList .courseList__div .courseList__Subject .course button {
+  width: 60%;
+  margin: 1.5rem;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=phone.css.map */
