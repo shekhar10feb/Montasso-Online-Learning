@@ -178,7 +178,6 @@
         }
 
         .courseList__Subject {
-            flex-wrap: wrap;
 
             .course {
                 padding: .8rem 1rem;
@@ -201,4 +200,29 @@
         }
     }
 }
+
+// About Us Section 
+#about {
+    height: 42rem;
+
+    .aboutUs {
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin: 1rem;
+            margin-left: 0;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+// Blog Section 
+
+// Contact Section 
+
+// Footer Section 
 
