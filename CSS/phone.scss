@@ -207,6 +207,39 @@
     }
 }
 
+// About Us Section 
+#about {
+    // width: 80%;
+    height: 43rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 5rem;
+    font-family: 'Roboto', sans-serif;
+
+    .aboutUs {
+        width: 100%;
+        padding: 1rem;
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: .8rem;
+            margin-left: 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// Blog Section 
+
+// Contact Section 
+
+// Footer Section 
+
 
 
 
