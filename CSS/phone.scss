@@ -210,19 +210,18 @@
 // About Us Section 
 #about {
     // width: 80%;
-    height: 43rem;
+    height: 57rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3px 5rem;
+    padding: 3px 20px;
     font-family: 'Roboto', sans-serif;
 
     .aboutUs {
-        width: 100%;
-        padding: 1rem;
+        padding: .5rem;
 
         h1 {
-            font-size: 1.8rem;
+            font-size: 1.8em;
             font-weight: 600;
             margin: .8rem;
             margin-left: 0;
@@ -235,7 +234,54 @@
 }
 
 // Blog Section 
+#blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 20px;
 
+    .blogs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .blogs-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: .8rem;
+
+            h1 {
+                font-size: 1.7rem;
+                font-weight: 600;
+                margin: .8rem;
+            }
+        }
+
+        .blogs-category {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: .8rem;
+
+            .topic-blog {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem;
+                padding: .8rem 1rem;
+                border-radius: .8rem;  
+                border: 2px solid #000;
+
+                p {
+                    font-size: 1.2rem; 
+                }
+
+                
+            } 
+        }
+    }
+}
 // Contact Section 
 
 // Footer Section 

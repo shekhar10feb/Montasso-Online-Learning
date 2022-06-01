@@ -244,7 +244,7 @@
 }
 
 #about {
-  height: 43rem;
+  height: 57rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,23 +254,99 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3px 5rem;
+  padding: 3px 20px;
   font-family: 'Roboto', sans-serif;
 }
 
 #about .aboutUs {
-  width: 100%;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 #about .aboutUs h1 {
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: 600;
   margin: .8rem;
   margin-left: 0;
 }
 
 #about .aboutUs p {
+  font-size: 1.2rem;
+}
+
+#blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 20px;
+}
+
+#blog .blogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#blog .blogs .blogs-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .8rem;
+}
+
+#blog .blogs .blogs-heading h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: .8rem;
+}
+
+#blog .blogs .blogs-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .8rem;
+}
+
+#blog .blogs .blogs-category .topic-blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  padding: .8rem 1rem;
+  border-radius: .8rem;
+  border: 2px solid #000;
+}
+
+#blog .blogs .blogs-category .topic-blog p {
   font-size: 1.2rem;
 }
 /*# sourceMappingURL=phone.css.map */

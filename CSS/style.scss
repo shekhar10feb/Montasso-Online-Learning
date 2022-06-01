@@ -378,9 +378,10 @@ html {
     align-items: center;
     padding: 3px 5rem;
     font-family: 'Roboto', sans-serif;
+    
 
     .aboutUs {
-        
+       
         h1 {
             font-size: 2.8rem;
             font-weight: 600;
@@ -398,6 +399,65 @@ html {
 }
 
 // Blog Section 
+#blog {
+    height: 62rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 5rem;
+    font-family: 'Roboto', sans-serif;
+
+    .blogs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .blogs-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+
+            h1 {
+                font-size: 2.8rem;
+                font-weight: 600;
+                margin: 1.5rem;
+                margin-left: 0;
+            }
+        }
+
+        .blogs-category {
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+
+            .topic-blog {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin: 1.2rem;
+                padding: 1rem 1.4rem;
+                border-radius: 1rem;  
+                cursor: pointer;
+                border: 2px solid #000;
+
+                &:hover {
+                    color: #fff;
+                    background-image: linear-gradient(to right, rgba(96, 214, 214, 50%), rgba(44, 167, 167, 100%));
+                    border: 2px solid #fff;
+                }
+
+                p {
+                    font-size: 1.8rem; 
+                }
+
+                
+            } 
+        }
+    }
+}
 
 // Contact Section 
 
