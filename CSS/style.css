@@ -573,4 +573,154 @@ html {
 #blog .blogs .blogs-category .topic-blog p {
   font-size: 1.8rem;
 }
+
+#contact {
+  height: 62rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+#contact .contact-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .contact-div .contact-heading {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contact-div .contact-heading h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 1.5rem;
+  margin-left: 0;
+}
+
+#contact .contact-div .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 4rem .5rem;
+}
+
+#contact .contact-div .contact-content .contact-image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contact-div .contact-content .contact-image img {
+  max-width: 100%;
+}
+
+#contact .contact-div .contact-content .contact-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-address h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1.5rem;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-address p {
+  margin: 0 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-size: 1.4rem;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-online {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-online p {
+  margin: 0 1rem;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-online p span i {
+  font-size: 3rem;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-online p:hover {
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#60d6d6), to(#2ca7a7));
+  background-image: linear-gradient(to right, #60d6d6, #2ca7a7);
+}
 /*# sourceMappingURL=style.css.map */

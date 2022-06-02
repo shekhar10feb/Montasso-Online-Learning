@@ -460,5 +460,102 @@ html {
 }
 
 // Contact Section 
+#contact {
+    height: 62rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 5rem;
+    font-family: 'Roboto', sans-serif;
 
+    .contact-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .contact-heading {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 2.8rem;
+                font-weight: 600;
+                margin: 1.5rem;
+                margin-left: 0;
+            }
+        }
+
+        .contact-content {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            padding: 4rem .5rem;
+
+            .contact-image {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .contact-contents {
+                display: flex;
+                justify-content: space-evenly;
+                align-content: center;
+                flex-direction: column;
+
+                .contact-address {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center; 
+                    flex-direction: column;
+
+                    h2 {
+                        font-size: 2rem;
+                        font-weight: 600;
+                        margin: 1.5rem;
+                    }
+
+                    p {
+                        margin: 0 1.5rem;
+                        margin-bottom: 0;
+                        line-height: 1.4;
+                        font-size: 1.4rem; 
+                    }
+                }
+
+                .contact-online {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    
+                    p {
+                        margin: 0 1rem;
+                        padding: .5rem;
+                        border-radius: .5rem;
+
+                        span {
+
+                            i {
+                                font-size: 3rem;
+                            }
+                        }
+
+                        &:hover {
+                            color: #fff;
+                            background-image: linear-gradient(to right, rgba(96, 214, 214, 50%), rgba(44, 167, 167, 100%));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 // Footer Section 
