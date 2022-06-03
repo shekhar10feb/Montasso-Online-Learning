@@ -33,7 +33,7 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  padding: 3px 20px;
+  padding: 3px 1rem;
 }
 
 #home::before {
@@ -73,7 +73,7 @@
 }
 
 #home .learningPhoto img {
-  height: 22rem;
+  height: 20rem;
 }
 
 #benefits {
@@ -89,7 +89,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3px 20px;
+  padding: 3px 1rem;
 }
 
 #benefits .benefits-photo {
@@ -98,7 +98,7 @@
 }
 
 #benefits .benefits-photo img {
-  max-height: 19rem;
+  max-height: 15.3rem;
 }
 
 #benefits .benefits-main {
@@ -166,7 +166,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3px .5rem;
+  padding: 3px 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -244,7 +244,7 @@
 }
 
 #about {
-  height: 57rem;
+  height: 48rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,7 +254,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3px 20px;
+  padding: 3px 1rem;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -263,7 +263,7 @@
 }
 
 #about .aboutUs h1 {
-  font-size: 1.8em;
+  font-size: 1.7rem;
   font-weight: 600;
   margin: .8rem;
   margin-left: 0;
@@ -274,6 +274,7 @@
 }
 
 #blog {
+  height: 44rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +284,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 13px 20px;
+  padding: 3px 1rem;
 }
 
 #blog .blogs {
@@ -348,5 +349,93 @@
 
 #blog .blogs .blogs-category .topic-blog p {
   font-size: 1.2rem;
+}
+
+#contact {
+  height: 44rem;
+  padding: 3px 1rem;
+}
+
+#contact .contact-div {
+  height: 80%;
+}
+
+#contact .contact-div .contact-heading {
+  width: 100%;
+}
+
+#contact .contact-div .contact-heading h1 {
+  font-size: 1.7rem;
+}
+
+#contact .contact-div .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem .5rem;
+}
+
+#contact .contact-div .contact-content .contact-image {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-address {
+  margin-bottom: .5rem;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-address h2 {
+  font-size: 1.7rem;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-address p {
+  font-size: 1.2rem;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-online {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contact-div .contact-content .contact-contents .contact-online p span i {
+  font-size: 1.5rem;
+}
+
+footer {
+  padding: 1rem 0;
+}
+
+footer .footer-div h3 {
+  font-size: 1.4rem;
+}
+
+footer .footer-div p {
+  font-size: 1rem;
 }
 /*# sourceMappingURL=phone.css.map */

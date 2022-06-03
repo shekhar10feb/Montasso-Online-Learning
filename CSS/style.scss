@@ -558,4 +558,34 @@ html {
         }
     }
 }
+
 // Footer Section 
+footer {
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    color: #fff;
+    padding: 1rem 0;
+    background-image: linear-gradient(to right, rgba(96, 214, 214, 50%), rgba(44, 167, 167, 100%));
+    font-family: 'Roboto', sans-serif;
+
+    .footer-div {
+        display: flex;
+        justify-content: center;
+        align-content: center; 
+        flex-direction: column;
+        text-align: center;
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 0;
+            line-height: 1.4;
+            font-size: 1.4rem; 
+        }
+    }
+}
