@@ -28,12 +28,8 @@
     display: flex;
     justify-content: space-around;
     align-content: center;
-    height: 50rem;
+    height: 42rem;
     padding: 3px 4rem;
-
-    &::before {
-        height: 55rem;
-    }
 
     .content {
         height: 50%;
@@ -77,10 +73,11 @@
 }
 
 #benefits {
-    height: 50rem;
+    height: 42rem;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
+
 
     .benefits-photo {
         width: 47%;
@@ -97,10 +94,11 @@
 
 .benefits-facts {
     width: 90%;
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-content: center;
+
 
     .heading-paragraph {
         font-size: 1rem;
@@ -149,7 +147,7 @@
 }
 
 #courseList {
-    height: 68rem;
+    height: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,7 +201,7 @@
 
 // About Us Section 
 #about {
-    height: 42rem;
+    height: 40rem;
 
     .aboutUs {
         
@@ -222,7 +220,8 @@
 
 // Blog Section 
 #blog {
-
+    height: 40rem;
+    
     .blogs {
 
         .blogs-heading {
@@ -253,6 +252,78 @@
     }
 }
 // Contact Section 
+#contact {
+    height: 40rem;
+    padding: 3px 3rem;
 
+    .contact-div {
+
+        .contact-heading {
+
+            h1 {
+                font-size: 1.7rem;
+                font-weight: 600;
+                margin: 1rem;
+                margin-left: 0;
+            }
+        }
+
+        .contact-content {
+            padding: 4rem .5rem;
+
+            .contact-contents {
+               
+                .contact-address {
+
+                    h2 {
+                        font-size: 1.6rem;
+                        margin: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        margin: 0 1.5rem;
+                        margin-bottom: 0;
+                        line-height: 1.2;
+                        font-size: 1.4rem; 
+                    }
+                }
+
+                .contact-online {
+                    
+                    p {
+                        font-size: 1.2rem;
+
+                        span {
+
+                            i {
+                                font-size: 2rem;
+                            }
+                        }
+
+                        &:hover {
+                            color: #fff;
+                            background-image: linear-gradient(to right, rgba(96, 214, 214, 50%), rgba(44, 167, 167, 100%));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 // Footer Section 
+footer {
 
+    .footer-div {
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.4;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+    }
+}
