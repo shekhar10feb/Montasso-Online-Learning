@@ -8,20 +8,27 @@
 
 #navbar ul li a {
   font-size: 1rem;
-  padding: 0 12px;
+  padding: 0.5rem 0.8rem;
 }
 
 #logo {
-  margin: 3px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0.5rem 0.8rem;
+  margin: 0;
 }
 
 #logo img {
-  height: 4.5rem;
-  margin: .5rem auto;
+  width: 100%;
 }
 
 #home {
-  height: 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,16 +40,12 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  padding: 3px 1rem;
-}
-
-#home::before {
-  height: 55rem;
+  padding: 0.5rem 0.8rem;
 }
 
 #home .content {
   width: 100%;
-  height: 50%;
+  margin: 1rem 0;
 }
 
 #home .content-main {
@@ -50,13 +53,13 @@
 }
 
 #home .content-main .phrase, #home .content-main p {
-  font-size: 1.4rem;
-  margin: 1.2rem;
+  font-size: 1.2rem;
+  margin: .8rem;
 }
 
 #home .content-main h1 {
-  font-size: 2rem;
-  margin: 1.2rem;
+  font-size: 1.7rem;
+  margin: .8rem;
 }
 
 #home .content-sub {
@@ -66,18 +69,20 @@
 #home .content-sub button {
   width: 40%;
   font-size: 1.2rem;
-  padding: .4rem .6rem;
+  padding: 1rem 0;
   margin: 1.4rem;
-  margin-left: 1.2rem;
-  margin-bottom: .4rem;
+  margin-left: .8rem;
+}
+
+#home .learningPhoto {
+  width: 100%;
 }
 
 #home .learningPhoto img {
-  height: 20rem;
+  width: 100%;
 }
 
 #benefits {
-  height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,26 +94,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3px 1rem;
+  padding: 0.5rem 0.8rem;
 }
 
 #benefits .benefits-photo {
   width: 100%;
-  max-height: 38%;
 }
 
 #benefits .benefits-photo img {
-  max-height: 15.3rem;
+  width: 100%;
 }
 
 #benefits .benefits-main {
   width: 100%;
-  max-height: 58%;
 }
 
 .benefits-facts {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,23 +118,24 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  width: 100%;
 }
 
 .benefits-facts .heading-paragraph {
   font-size: 1rem;
-  margin: .8rem;
+  margin: 0.8rem;
   margin-bottom: 0;
 }
 
 .benefits-facts h1 {
   font-size: 1.7rem;
-  margin: .8rem;
+  margin: 0.8rem;
   margin-bottom: 0;
 }
 
 .benefits-facts .getBenefits {
   width: 90%;
-  margin: .8rem;
+  margin: 0.8rem;
   padding: .3rem;
 }
 
@@ -155,21 +157,19 @@
 
 .benefits-facts .getBenefits .content-main .description {
   font-size: 1rem;
-  margin-top: .7rem;
+  margin-top: .8rem;
 }
 
 #courseList {
-  height: 130rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3px 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0.5rem 0.8rem;
 }
 
 #courseList .courseList__div {
@@ -179,9 +179,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -189,15 +188,16 @@
 }
 
 #courseList .courseList__div .courseList__heading {
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -205,8 +205,8 @@
 }
 
 #courseList .courseList__div .courseList__heading p {
-  font-size: 1rem;
-  margin: .8rem;
+  font-size: 1.2rem;
+  margin: 0.8rem;
   margin-left: 0;
   margin-bottom: 0;
 }
@@ -214,17 +214,17 @@
 #courseList .courseList__div .courseList__heading h1 {
   font-size: 1.4rem;
   font-weight: 600;
-  margin: .8rem;
+  margin: 0.8rem;
   margin-left: 0;
 }
 
 #courseList .courseList__div .courseList__Subject {
-  width: 90%;
+  width: 95%;
   text-align: center;
 }
 
 #courseList .courseList__div .courseList__Subject .course {
-  width: 80%;
+  width: 95%;
   display: inline-block;
   margin: 1rem 0;
 }
@@ -234,57 +234,67 @@
 }
 
 #courseList .courseList__div .courseList__Subject .course p {
-  font-size: .8rem;
+  font-size: 1.2rem;
 }
 
 #courseList .courseList__div .courseList__Subject .course button {
   width: 60%;
   margin: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 #about {
-  height: 48rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 3px 1rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0.5rem 0.8rem;
   font-family: 'Roboto', sans-serif;
 }
 
 #about .aboutUs {
-  padding: .5rem;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem 0.8rem;
 }
 
 #about .aboutUs h1 {
   font-size: 1.7rem;
   font-weight: 600;
-  margin: .8rem;
-  margin-left: 0;
+  margin: 1rem 0;
 }
 
 #about .aboutUs p {
   font-size: 1.2rem;
+  margin: .5rem 0;
 }
 
 #blog {
-  height: 44rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 3px 1rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0.5rem 0.8rem;
 }
 
 #blog .blogs {
@@ -294,9 +304,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
 }
 
 #blog .blogs .blogs-heading {
@@ -306,16 +316,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: .8rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 1rem 0;
 }
 
 #blog .blogs .blogs-heading h1 {
   font-size: 1.7rem;
   font-weight: 600;
-  margin: .8rem;
+  margin: 0.8rem;
 }
 
 #blog .blogs .blogs-category {
@@ -325,10 +334,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: .8rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0.8rem;
 }
 
 #blog .blogs .blogs-category .topic-blog {
@@ -338,11 +346,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem;
-  padding: .8rem 1rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0.8rem;
+  padding: 0.5rem 0.8rem;
   border-radius: .8rem;
   border: 2px solid #000;
 }
@@ -352,15 +359,10 @@
 }
 
 #contact {
-  height: 44rem;
-  padding: 3px 1rem;
+  padding: 0.5rem 0.8rem;
 }
 
 #contact .contact-div {
-  height: 80%;
-}
-
-#contact .contact-div .contact-heading {
   width: 100%;
 }
 
@@ -372,9 +374,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -382,42 +384,54 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1rem .5rem;
 }
 
 #contact .contact-div .contact-content .contact-image {
-  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 95%;
 }
 
-#contact .contact-div .contact-content .contact-contents .contact-address {
-  margin-bottom: .5rem;
+#contact .contact-div .contact-content .contact-contents {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #contact .contact-div .contact-content .contact-contents .contact-address h2 {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
+  margin: 0.8rem;
 }
 
 #contact .contact-div .contact-content .contact-contents .contact-address p {
   font-size: 1.2rem;
+  margin: 0.8rem;
 }
 
 #contact .contact-div .contact-content .contact-contents .contact-online {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -428,11 +442,11 @@
 }
 
 footer {
-  padding: 1rem 0;
+  padding: 0.5rem 0.8rem;
 }
 
 footer .footer-div h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 footer .footer-div p {

@@ -31,18 +31,6 @@ html {
   top: 0;
 }
 
-#navbar::before {
-  content: "";
-  background-color: #dadada;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.4;
-}
-
 #logo {
   margin: 5px 22px;
 }
@@ -86,8 +74,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 3px 5rem;
-  height: 52rem;
+  padding: 6rem 2rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -95,20 +82,7 @@ html {
           align-items: center;
 }
 
-#home::before {
-  content: "";
-  background: url("../assets/Background.png") no-repeat center center/cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 60rem;
-  width: 100%;
-  z-index: -1;
-  opacity: .89;
-}
-
 #home .content {
-  height: 74%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,8 +163,12 @@ html {
           box-shadow: 0 2px 1px 1px #c2c2c2;
 }
 
+#home .learningPhoto {
+  max-width: 64rem;
+}
+
 #home .learningPhoto img {
-  height: 38rem;
+  height: 100%;
 }
 
 #home p {
@@ -198,7 +176,6 @@ html {
 }
 
 #benefits {
-  height: 62rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,12 +185,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3px 5rem;
+  padding: 11rem 2rem;
 }
 
 #benefits .benefits-photo {
   height: 90%;
-  width: 50%;
+  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +318,6 @@ html {
 }
 
 #courseList {
-  height: 62rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,42 +327,11 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3px 5rem;
+  padding: 3rem 2rem;
   font-family: 'Roboto', sans-serif;
 }
 
-#courseList .courseList__div P {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 1.5rem;
-  margin-left: 0;
-  margin-bottom: 0;
-}
-
-#courseList .courseList__div h1 {
-  font-size: 2.8rem;
-  font-weight: 600;
-  margin: 1.5rem;
-  margin-left: 0;
-}
-
-#courseList .courseList__div .courseList__Subject {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-#courseList .courseList__div .courseList__Subject .course {
+#courseList .courseList__div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,19 +345,77 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1rem 1.5rem;
+}
+
+#courseList .courseList__div .courseList__heading {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#courseList .courseList__div .courseList__heading P {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 1.5rem;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+#courseList .courseList__div .courseList__heading h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 1.5rem;
+  margin-left: 0;
+}
+
+#courseList .courseList__div .courseList__Subject {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#courseList .courseList__div .courseList__Subject .course {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
   margin: 1rem;
   background-color: #f5f8f2;
   border: 2px solid #000;
   border-radius: 1rem;
-}
-
-#courseList .courseList__div .courseList__Subject .course:nth-child(1) {
-  margin-left: 0;
-}
-
-#courseList .courseList__div .courseList__Subject .course:nth-child(6) {
-  margin-right: 0;
 }
 
 #courseList .courseList__div .courseList__Subject .course h2 {
@@ -430,9 +433,8 @@ html {
   color: #fff;
   background-image: -webkit-gradient(linear, left top, right top, from(#60d6d6), to(#2ca7a7));
   background-image: linear-gradient(to right, #60d6d6, #2ca7a7);
-  padding: 1rem 1.5rem;
-  margin: 2rem;
-  margin-left: 2rem;
+  padding: 1rem;
+  margin: 1rem;
   border-radius: 5rem;
   font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
@@ -455,7 +457,6 @@ html {
 }
 
 #about {
-  height: 62rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,8 +466,13 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3px 5rem;
+  padding: 14rem 2rem;
   font-family: 'Roboto', sans-serif;
+}
+
+#about .aboutUs {
+  width: 80%;
+  padding: 1rem 2rem;
 }
 
 #about .aboutUs h1 {
@@ -484,7 +490,6 @@ html {
 }
 
 #blog {
-  height: 62rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,11 +499,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3px 5rem;
+  padding: 15rem 2rem;
   font-family: 'Roboto', sans-serif;
 }
 
 #blog .blogs {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,12 +521,13 @@ html {
 }
 
 #blog .blogs .blogs-heading {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -530,11 +537,10 @@ html {
   font-size: 2.8rem;
   font-weight: 600;
   margin: 1.5rem;
-  margin-left: 0;
+  margin-left: .5rem;
 }
 
 #blog .blogs .blogs-category {
-  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,7 +581,6 @@ html {
 }
 
 #contact {
-  height: 62rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,11 +590,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3px 5rem;
+  padding: 7rem 2rem;
   font-family: 'Roboto', sans-serif;
 }
 
 #contact .contact-div {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,9 +616,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -622,22 +628,23 @@ html {
   font-size: 2.8rem;
   font-weight: 600;
   margin: 1.5rem;
-  margin-left: 0;
+  margin-left: .5rem;
 }
 
 #contact .contact-div .contact-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 4rem .5rem;
 }
 
 #contact .contact-div .contact-content .contact-image {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,14 +693,14 @@ html {
 #contact .contact-div .contact-content .contact-contents .contact-address h2 {
   font-size: 2rem;
   font-weight: 600;
-  margin: 1.5rem;
+  margin: .5rem 1.5rem 1rem 1.5rem;
 }
 
 #contact .contact-div .contact-content .contact-contents .contact-address p {
   margin: 0 1.5rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   line-height: 1.4;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 #contact .contact-div .contact-content .contact-contents .contact-online {
@@ -734,7 +741,7 @@ footer {
   -ms-flex-line-pack: center;
       align-content: center;
   color: #fff;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#60d6d6), to(#2ca7a7));
   background-image: linear-gradient(to right, #60d6d6, #2ca7a7);
   font-family: 'Roboto', sans-serif;
@@ -762,8 +769,9 @@ footer .footer-div h3 {
 }
 
 footer .footer-div p {
+  margin: 1rem;
   margin-bottom: 0;
   line-height: 1.4;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=style.css.map */

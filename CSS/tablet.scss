@@ -25,49 +25,58 @@
 
 // Home Section 
 #home {
+    max-width: 100%;
     display: flex;
     justify-content: space-around;
     align-content: center;
-    height: 42rem;
-    padding: 3px 4rem;
+    // height: 42rem;
+    padding: 5 1.5rem;
+    
 
     .content {
-        height: 50%;
+        max-width: 50%;
+        // font-size: 1rem;
+        // outline: 1px solid red;
         
         &-main {
+            width: 100%;
+            font-size: 1.2rem;
 
             .phrase, p {
-                font-style: 1.4rem;
+                font-style: 1.4em;
                 margin: 1.6rem;
+                // outline: 1px solid red;
             }
 
             h1 {
-                font-size: 2rem;
+                font-size: 2em;
                 margin: 1.6rem;
+                // outline: 1px solid red;
             }
         }
 
         &-sub {
             width: 100%;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
+            align-items: center;
+            // outline: 1px solid red;
 
             button {
-                width: 60%;
+                width: 100%;
                 font-size: 1.2rem;
-                margin: .6rem;
-                margin-left: 1.6rem;
-                padding: .8rem;
+                margin: .9rem;
             }
         }
     }
 
     .learningPhoto {
-        margin-bottom: 2rem;
+        max-width: 47%;
+        margin: 1.5rem 0 1.5rem 1.5rem;
+        outline: 1px solid red;
 
         img {
-            max-height: 20rem;
+            width: 100%;
         }
     }
 }

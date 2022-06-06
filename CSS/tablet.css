@@ -20,6 +20,7 @@
 }
 
 #home {
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,21 +28,25 @@
       justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 42rem;
-  padding: 3px 4rem;
+  padding: 5 1.5rem;
 }
 
 #home .content {
-  height: 50%;
+  max-width: 50%;
+}
+
+#home .content-main {
+  width: 100%;
+  font-size: 1.2rem;
 }
 
 #home .content-main .phrase, #home .content-main p {
-  font-style: 1.4rem;
+  font-style: 1.4em;
   margin: 1.6rem;
 }
 
 #home .content-main h1 {
-  font-size: 2rem;
+  font-size: 2em;
   margin: 1.6rem;
 }
 
@@ -50,29 +55,28 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #home .content-sub button {
-  width: 60%;
+  width: 100%;
   font-size: 1.2rem;
-  margin: .6rem;
-  margin-left: 1.6rem;
-  padding: .8rem;
+  margin: .9rem;
 }
 
 #home .learningPhoto {
-  margin-bottom: 2rem;
+  max-width: 47%;
+  margin: 1.5rem 0 1.5rem 1.5rem;
+  outline: 1px solid red;
 }
 
 #home .learningPhoto img {
-  max-height: 20rem;
+  width: 100%;
 }
 
 #benefits {
