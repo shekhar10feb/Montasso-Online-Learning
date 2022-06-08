@@ -84,7 +84,6 @@ html {
     align-items: center;
 
     .content {
-        // height: 74%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -125,7 +124,6 @@ html {
                 background-image: linear-gradient(to right, rgba(96, 214, 214, 50%), rgba(44, 167, 167, 100%));
                 padding: 1rem;
                 margin: $margin;
-                // margin-left: 2rem;
                 border-radius: 5rem;
                 font-size: 1.4rem;
                 font-family: 'Roboto', sans-serif;
@@ -266,15 +264,15 @@ html {
 
     .courseList__div {
         @include flexProperty;
+        width: 95%;
         flex-direction: column;
 
         .courseList__heading {
-            width: 90%;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-
+            
             P {
                 font-size: 1.4rem;
                 font-weight: 700;
@@ -292,20 +290,17 @@ html {
         }
 
         .courseList__Subject {
-            // width: 90%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-wrap: wrap;
-            padding: 1rem;
+            padding: 1rem 0;
 
             .course {
-                // @include flexProperty;
-                width: 22%;
-                flex-direction: column;
-                padding: .6rem;
+                width: 26%;
+                padding: 1rem;
                 text-align: center;
-                margin: .5rem;
+                margin: .5rem .5rem .5rem 0;
                 background-color: rgb(245, 248, 242);
                 border: 2px solid #000;
                 border-radius: 1rem;
@@ -385,10 +380,10 @@ html {
         flex-direction: column;
 
         .blogs-heading {
-            // width: 100%;
             display: flex;
             justify-content: flex-start;
             align-items: center; 
+            margin-left: 2rem;
     
             h1 {
                 font-size: 2.8rem;
@@ -437,7 +432,6 @@ html {
         flex-direction: column;
 
         .contact-heading {
-            // width: 100%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -457,13 +451,11 @@ html {
             padding: 4rem .5rem;
 
             .contact-image {
-                width: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flexProperty;
+                max-width: 50%;
 
                 img {
-                    max-width: 100%;
+                    width: 100%;
                 }
             }
 

@@ -28,7 +28,6 @@
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 6rem 0.5rem 2rem 0.5rem;
-  outline: 1px solid red;
 }
 
 #home .content {
@@ -71,7 +70,6 @@
 #home .learningPhoto {
   max-width: 47%;
   margin: 1.5rem 0 1.5rem 1.5rem;
-  outline: 1px solid red;
 }
 
 #home .learningPhoto img {
@@ -88,7 +86,6 @@
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 6rem 0.5rem 2rem 0.5rem;
-  outline: 1px solid red;
 }
 
 #benefits .benefits-photo {
@@ -162,11 +159,6 @@
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 6rem 0.5rem 2rem 0.5rem;
-  outline: 1px solid red;
-}
-
-#courseList .courseList__div {
-  outline: 1px solid red;
 }
 
 #courseList .courseList__div .courseList__heading {
@@ -182,31 +174,28 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  outline: 1px solid red;
+  margin-left: 2rem;
 }
 
 #courseList .courseList__div .courseList__heading p {
   font-size: 1rem;
   margin: 1rem 1rem 0 0;
-  outline: 1px solid red;
 }
 
 #courseList .courseList__div .courseList__heading h1 {
   font-size: 1.7rem;
   font-weight: 600;
   margin: 1rem 1rem 0 0;
-  outline: 1px solid red;
 }
 
 #courseList .courseList__div .courseList__Subject {
-  outline: 1px solid red;
+  padding-left: 2rem;
 }
 
 #courseList .courseList__div .courseList__Subject .course {
-  width: 40%;
-  padding: 1rem;
-  margin: .8rem;
-  outline: 1px solid red;
+  width: 28%;
+  padding: .6rem;
+  margin: .4rem;
 }
 
 #courseList .courseList__div .courseList__Subject .course h2 {
@@ -220,12 +209,16 @@
 #courseList .courseList__div .courseList__Subject .course button {
   width: 60%;
   margin: 1.5rem;
+  margin-bottom: 0;
   font-size: 1rem;
 }
 
 #about {
   padding: 6rem 0.5rem 2rem 0.5rem;
-  outline: 1px solid red;
+}
+
+#about .aboutUs {
+  width: 90%;
 }
 
 #about .aboutUs h1 {
@@ -240,13 +233,24 @@
 
 #blog {
   padding: 6rem 0.5rem 2rem 0.5rem;
-  outline: 1px solid red;
+}
+
+#blog .blogs {
+  width: 95%;
+}
+
+#blog .blogs .blogs-heading {
+  margin-left: 2rem;
 }
 
 #blog .blogs .blogs-heading h1 {
   font-size: 1.7rem;
   font-weight: 600;
   margin: 1rem 1rem 0 0;
+}
+
+#blog .blogs .blogs-category {
+  margin-left: 2rem;
 }
 
 #blog .blogs .blogs-category .topic-blog {
@@ -262,7 +266,14 @@
 
 #contact {
   padding: 6rem 0.5rem 2rem 0.5rem;
-  outline: 1px solid red;
+}
+
+#contact .contact-div {
+  width: 95%;
+}
+
+#contact .contact-div .contact-heading {
+  margin-left: 2rem;
 }
 
 #contact .contact-div .contact-heading h1 {
@@ -282,6 +293,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 4rem .5rem;
+  margin-left: 2rem;
 }
 
 #contact .contact-div .contact-content .contact-image {
@@ -294,10 +306,6 @@
   -ms-flex-line-pack: center;
       align-content: center;
   width: 40%;
-}
-
-#contact .contact-div .contact-content .contact-contents {
-  outline: 1px solid red;
 }
 
 #contact .contact-div .contact-content .contact-contents .contact-address h2 {
