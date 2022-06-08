@@ -290,14 +290,18 @@ $width: 100%;
         }
 
         .contact-content {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            @include flexProperty;
             flex-direction: column;
     
             .contact-image {
                 @include flexProperty;
-                width: 95%;
+                max-width: 90%;
+                margin: $specific-margin;
+                margin-top: 0;
+
+                img {
+                    width: 100%;
+                }
             }
 
             .contact-contents {
