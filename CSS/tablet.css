@@ -20,7 +20,6 @@
 }
 
 #home {
-  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +27,8 @@
       justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 5 1.5rem;
+  padding: 6rem 0.5rem 2rem 0.5rem;
+  outline: 1px solid red;
 }
 
 #home .content {
@@ -51,16 +51,15 @@
 }
 
 #home .content-sub {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
 }
 
 #home .content-sub button {
@@ -80,7 +79,6 @@
 }
 
 #benefits {
-  height: 42rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,6 +87,8 @@
           justify-content: space-evenly;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 6rem 0.5rem 2rem 0.5rem;
+  outline: 1px solid red;
 }
 
 #benefits .benefits-photo {
@@ -104,8 +104,6 @@
 }
 
 .benefits-facts {
-  width: 90%;
-  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,26 +112,22 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  width: 90%;
 }
 
 .benefits-facts .heading-paragraph {
   font-size: 1rem;
-  margin: 1rem;
-  margin-left: 0;
-  margin-bottom: 0;
+  margin: 1rem 1rem 0 0;
 }
 
 .benefits-facts h1 {
   font-size: 1.7rem;
-  margin: 1rem;
-  margin-left: 0;
-  margin-bottom: 0;
+  margin: 1rem 1rem 0 0;
 }
 
 .benefits-facts .getBenefits {
   width: 90%;
-  margin: 1rem;
-  margin-left: 0;
+  margin: 1rem 1rem 0 0;
   padding: .5rem;
 }
 
@@ -159,16 +153,20 @@
 }
 
 #courseList {
-  height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 6rem 0.5rem 2rem 0.5rem;
+  outline: 1px solid red;
+}
+
+#courseList .courseList__div {
+  outline: 1px solid red;
 }
 
 #courseList .courseList__div .courseList__heading {
@@ -178,32 +176,37 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  outline: 1px solid red;
 }
 
 #courseList .courseList__div .courseList__heading p {
   font-size: 1rem;
-  margin: 1rem;
-  margin-left: 0;
-  margin-bottom: 0;
+  margin: 1rem 1rem 0 0;
+  outline: 1px solid red;
 }
 
 #courseList .courseList__div .courseList__heading h1 {
   font-size: 1.7rem;
   font-weight: 600;
-  margin: 1rem;
-  margin-left: 0;
+  margin: 1rem 1rem 0 0;
+  outline: 1px solid red;
+}
+
+#courseList .courseList__div .courseList__Subject {
+  outline: 1px solid red;
 }
 
 #courseList .courseList__div .courseList__Subject .course {
-  padding: .8rem 1rem;
+  width: 40%;
+  padding: 1rem;
   margin: .8rem;
+  outline: 1px solid red;
 }
 
 #courseList .courseList__div .courseList__Subject .course h2 {
@@ -221,14 +224,14 @@
 }
 
 #about {
-  height: 40rem;
+  padding: 6rem 0.5rem 2rem 0.5rem;
+  outline: 1px solid red;
 }
 
 #about .aboutUs h1 {
   font-size: 1.7rem;
   font-weight: 600;
-  margin: 1rem;
-  margin-left: 0;
+  margin: 1rem 1rem 0 0;
 }
 
 #about .aboutUs p {
@@ -236,14 +239,14 @@
 }
 
 #blog {
-  height: 40rem;
+  padding: 6rem 0.5rem 2rem 0.5rem;
+  outline: 1px solid red;
 }
 
 #blog .blogs .blogs-heading h1 {
   font-size: 1.7rem;
   font-weight: 600;
-  margin: 1rem;
-  margin-left: 0;
+  margin: 1rem 1rem 0 0;
 }
 
 #blog .blogs .blogs-category .topic-blog {
@@ -258,19 +261,43 @@
 }
 
 #contact {
-  height: 40rem;
-  padding: 3px 3rem;
+  padding: 6rem 0.5rem 2rem 0.5rem;
+  outline: 1px solid red;
 }
 
 #contact .contact-div .contact-heading h1 {
   font-size: 1.7rem;
   font-weight: 600;
-  margin: 1rem;
-  margin-left: 0;
+  margin: 1rem 1rem 0 0;
 }
 
 #contact .contact-div .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 4rem .5rem;
+}
+
+#contact .contact-div .contact-content .contact-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 40%;
+}
+
+#contact .contact-div .contact-content .contact-contents {
+  outline: 1px solid red;
 }
 
 #contact .contact-div .contact-content .contact-contents .contact-address h2 {
