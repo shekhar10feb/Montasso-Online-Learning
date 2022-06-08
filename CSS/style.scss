@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+$padding: 8rem 4rem;
+$margin: 2rem 0;
+
+@mixin flexProperty {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +34,7 @@ html {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 // Navigation Bar: Logo and Image 
@@ -69,7 +79,7 @@ html {
 #home {
     display: flex;
     flex-direction: row;
-    padding: 6rem 2rem;
+    padding: 5rem 4rem;
     justify-content: space-around;
     align-items: center;
 
@@ -87,35 +97,35 @@ html {
             .phrase, p {
                 font-size: 1.5rem;
                 font-weight: 600;
-                margin: 2rem
+                margin: $margin;
             }
 
             h1 {
                 font-size: 3.2rem;
                 font-weight: 600;
-                margin: 2rem;
+                margin: $margin;
             } 
 
             p {
                 font-size: 1.2rem;
                 font-weight: 300;
-                margin: 2rem;
+                margin: $margin;
             }
         }
 
         &-sub {
             width: 100%;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: center;
             
             button {
-                width: 50%;
+                width: 40%;
                 color: #fff;
                 background-image: linear-gradient(to right, rgba(96, 214, 214, 50%), rgba(44, 167, 167, 100%));
-                padding: 1rem 1.5rem;
-                margin: 2rem;
-                margin-left: 2rem;
+                padding: 1rem;
+                margin: $margin;
+                // margin-left: 2rem;
                 border-radius: 5rem;
                 font-size: 1.4rem;
                 font-family: 'Roboto', sans-serif;
@@ -140,7 +150,7 @@ html {
         max-width: 64rem;
 
         img {
-            height: 100%;
+            width: 100%;
         }
     }
 
@@ -152,28 +162,23 @@ html {
 // Benfits Section 
 #benefits {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 11rem 2rem;
+    padding: $padding;
 
     .benefits-photo {
-        height: 90%;
-        width: 35%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexProperty;
+        width: 45%;
 
         img {
-            max-height: 24rem;
+            width: 100%;
         }
     }
 
     .benefits-main {
+        @include flexProperty;
         height: 90%;
         width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
         font-family: 'Roboto', sans-serif;
     }
@@ -189,7 +194,7 @@ html {
     .heading-paragraph {
         font-size: 1.4rem;
         font-weight: 700;
-        margin: 1.5rem;
+        margin: $margin;
         margin-left: 0;
         margin-bottom: 0;
     }
@@ -238,7 +243,7 @@ html {
         }
     
         .content-main {
-            
+
             .heading {
                 display: block;
                 font-size: 1.4rem;
@@ -255,20 +260,16 @@ html {
 
 // Course List Section 
 #courseList {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem 2rem;
+    @include flexProperty;
+    padding: $padding;
     font-family: 'Roboto', sans-serif;
 
     .courseList__div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexProperty;
         flex-direction: column;
 
         .courseList__heading {
-            width: 80%;
+            width: 90%;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -291,22 +292,20 @@ html {
         }
 
         .courseList__Subject {
-            width: 80%;
+            // width: 90%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-wrap: wrap;
-            padding-left: 0;
-            padding-right: 0;
+            padding: 1rem;
 
             .course {
-                width: 20%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                // @include flexProperty;
+                width: 22%;
                 flex-direction: column;
-                padding: 1rem;
-                margin: 1rem;
+                padding: .6rem;
+                text-align: center;
+                margin: .5rem;
                 background-color: rgb(245, 248, 242);
                 border: 2px solid #000;
                 border-radius: 1rem;
@@ -322,11 +321,11 @@ html {
                 }
 
                 button {
+                    display: inline-block;
                     width: 60%;
                     color: #fff;
                     background-image: linear-gradient(to right, rgba(96, 214, 214, 50%), rgba(44, 167, 167, 100%));
                     padding: 1rem;
-                    margin: 1rem;
                     border-radius: 5rem;
                     font-size: 1.2rem;
                     font-family: 'Roboto', sans-serif;
@@ -351,14 +350,11 @@ html {
 
 // About Us Section 
 #about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14rem 2rem;
+    @include flexProperty;
+    padding: $padding;
     font-family: 'Roboto', sans-serif;
 
     .aboutUs {
-        width: 80%;
         padding: 1rem 2rem;
 
         h1 {
@@ -371,6 +367,7 @@ html {
         p {
             font-size: 1.8rem;
             margin: 1rem;
+            margin-left: 0;
             line-height: 1.6;
             color: #000;
         }
@@ -379,21 +376,16 @@ html {
 
 // Blog Section 
 #blog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15rem 2rem;
+    @include flexProperty;
+    padding: $padding;
     font-family: 'Roboto', sans-serif;
-
+    
     .blogs {
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexProperty;
         flex-direction: column;
 
         .blogs-heading {
-            width: 100%;
+            // width: 100%;
             display: flex;
             justify-content: flex-start;
             align-items: center; 
@@ -407,15 +399,11 @@ html {
         }
 
         .blogs-category {
-            display: flex;
-            justify-content: center;
-            align-content: center;
+            @include flexProperty;
             flex-wrap: wrap;
 
             .topic-blog {
-                display: flex;
-                justify-content: center;
-                align-content: center;
+                @include flexProperty;
                 margin: 1.2rem;
                 padding: 1rem 1.4rem;
                 border-radius: 1rem;  
@@ -440,21 +428,16 @@ html {
 
 // Contact Section 
 #contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 7rem 2rem;
+    @include flexProperty;
+    padding: $padding;
     font-family: 'Roboto', sans-serif;
 
     .contact-div {
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexProperty;
         flex-direction: column;
 
         .contact-heading {
-            width: 100%;
+            // width: 100%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -469,12 +452,12 @@ html {
 
         .contact-content {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-content: center;
             padding: 4rem .5rem;
 
             .contact-image {
-                width: 60%;
+                width: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -491,15 +474,13 @@ html {
                 flex-direction: column;
             
                 .contact-address {
-                    display: flex;
-                    justify-content: center;
-                    align-content: center; 
+                    @include flexProperty;
                     flex-direction: column;
 
                     h2 {
                         font-size: 2rem;
                         font-weight: 600;
-                        margin: .5rem 1.5rem 1rem 1.5rem;
+                        margin: 0 1.5rem;
                     }
 
                     p {
@@ -540,18 +521,14 @@ html {
 
 // Footer Section 
 footer {
-    display: flex;
-    justify-content: center;
-    align-content: center; 
+    @include flexProperty; 
     color: #fff;
     padding: 1rem 2rem;
     background-image: linear-gradient(to right, rgba(96, 214, 214, 50%), rgba(44, 167, 167, 100%));
     font-family: 'Roboto', sans-serif;
     
     .footer-div {
-        display: flex;
-        justify-content: center;
-        align-content: center; 
+        @include flexProperty;
         flex-direction: column;
         text-align: center;
 
